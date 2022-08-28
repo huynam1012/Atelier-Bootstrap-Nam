@@ -16,7 +16,7 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-
-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
         </script>
@@ -45,6 +45,47 @@ J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="a
             </ul>
         </div>
     </nav>
+
+    <div class="container-fluid">
+        <div class="d-flex justify-content-end">
+            <a href="#" type="button" class="btn btn-outline-secondary mt-1">
+                Ajouter un nouveau collaborateur</a>
+        </div>
+        <h2>
+            Les collaborateurs
+        </h2>
+        <form>
+            <div class="form-row align-items-center">
+                <label for="inputRecherche" class="col-sm-2 col-form-label text-right">
+                    Rechercher un nom ou un prénom qui commence par :</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="inputRecherche">
+                </div>
+                <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary">Recherche</button>
+                </div>
+                <div class="col-sm-3">
+                    <input class="form-check-input" type="checkbox" id="colldesactives">
+                    <label class="form-check-label" for="colldesactives">
+                        Voir les collaborateurs désactives
+                    </label>
+                </div>
+            </div>
+            <div class="form-row align-items-center">
+                <label for="filterDept" class="col-sm-3 col-form-label text-right">
+                    Filtrer par département :</label>
+                <div class="col-sm-2">
+                    <select class="custom-select my-1 mr-sm-2" id="filterDept">
+                        <option value="1" selected>Tous</option>
+                        <option value="2">Comptabilité</option>
+                        <option value="3">Ressources Humaines</option>
+                        <option value="4">Informatique</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+    </div>
 
 </body>
 
