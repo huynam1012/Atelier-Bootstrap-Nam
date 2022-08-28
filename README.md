@@ -1,3 +1,3 @@
 # TP Atelier-Bootstrap
-Huy-Nam TRAN
+link
 https://huynam1012.github.io/Atelier-Bootstrap-Nam/
